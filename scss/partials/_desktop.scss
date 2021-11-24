@@ -1,0 +1,96 @@
+@import "variables";
+/*  Import Desktop design    */
+@media (min-width: 1000px) {
+  html {
+    font-size: 55%;
+  }
+  section {
+    padding: 30px;
+  }
+  .header {
+    position: fixed;
+    padding: 30px;
+    top: 0;
+    height: 90px;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: $white;
+    padding: 10px 9%;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+  .header .nav ul {
+    padding: 0 10px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  .header .nav ul li {
+    width: 100px;
+    padding: 10px 14px;
+    margin: 10px;
+    font-size: medium;
+    font-weight: 600;
+    border-radius: 5px;
+  }
+
+  .box-container {
+    margin-top: 30px;
+  }
+  .home {
+    margin-top: -100px;
+  }
+  .section-title {
+    margin-top: 30px;
+  }
+  .about {
+    // background-color: #f8c2c2;
+    margin-top: 30px;
+    display: grid;
+    height: 500px;
+    grid-template-columns: 400px 800px;
+    grid-gap: 5rem;
+  }
+
+  .about-image img {
+    height: 450px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-left: 0px;
+  }
+
+  .about-image {
+    height: 450px;
+    grid-template-columns: 1fr;
+    border-radius: 10px;
+  }
+
+  .about-content {
+    background-color: $gradient-Bg;
+    background-image: linear-gradient(0deg, $gradient-Bg 0%, $blue-shade 100%);
+    
+    border-radius: 10px;
+    margin-right: 50px;
+  }
+  .clip-polygon {
+    clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+  }
+  .skills-main {
+    margin-top: 40px;
+    display: grid;
+    height: 550px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5rem;
+  }
+
+  .contact-main {
+    margin-top: 40px;
+    display: grid;
+    height: 550px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5rem;
+  }
+}
